@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/jdbaptista/RRBFrontend#readme",
   "devDependencies": {
-    "electron": "^16.0.7"
+    "electron": "^16.0.8"
   },
   "dependencies": {
     "axios": "^0.25.0",

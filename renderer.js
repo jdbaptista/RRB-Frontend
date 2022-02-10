@@ -1,50 +1,14 @@
-const axios = require('axios');
 
-var butt = document.getElementById("myButton");
-console.log(butt);
-var text = document.getElementById("text");
-console.log(text);
-var bool = true;
+$(() => {
 
-butt.onclick = async () => {
-    await axios.request({
-        url : "http://localhost:8080/api/v1/labor/",
-        method : "get"
-    }).then((response) => {
-        showOutput(response);
+  $("#myButton").on("click", () => {
+    $.get("http://localhost:8080/api/v1/labor", (data, status) => {
+      for (var i = 0; i < data.length; i++) {
+        let container = $("<div></div>");
+        container.addClass("container");
+        container.html(data[i].name + " at " + data[i].address);
+        $("#res").append(container);
+      }
     })
-    
-}
-
-// Show output in browser
-function showOutput(res) {
-    document.getElementById('res').innerHTML = `
-    <div class="card card-body mb-4">
-      <h5>Status: ${res.status}</h5>
-    </div>
-    <div class="card mt-3">
-      <div class="card-header">
-        Headers
-      </div>
-      <div class="card-body">
-        <pre>${JSON.stringify(res.headers, null, 2)}</pre>
-      </div>
-    </div>
-    <div class="card mt-3">
-      <div class="card-header">
-        Data
-      </div>
-      <div class="card-body">
-        <pre>${JSON.stringify(res.data, null, 2)}</pre>
-      </div>
-    </div>
-    <div class="card mt-3">
-      <div class="card-header">
-        Config
-      </div>
-      <div class="card-body">
-        <pre>${JSON.stringify(res.config, null, 2)}</pre>
-      </div>
-    </div>
-  `;
-  }
+  })
+});
