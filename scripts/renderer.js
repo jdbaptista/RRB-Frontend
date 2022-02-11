@@ -1,4 +1,5 @@
 
+
 $(() => {
 
   var server = "localhost:8080";
@@ -39,7 +40,7 @@ $(() => {
 
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/api/v1/labor",
+      url: `http://${server}/api/v1/labor`,
       data: JSON.stringify(postData),
       contentType: "application/json; charset=utf-8",
       dataType: "json"
