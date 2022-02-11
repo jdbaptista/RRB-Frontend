@@ -1,4 +1,119 @@
 
-.container {
-    background-color: rgba(167, 62, 153, 0.356);
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.overlay {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: green;
+}
+
+.sidebar {
+    background-color: blue;
+    flex: 1 0 25%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: black;
+}
+
+.recent {
+    display: flex;
+    height: 75vh;
+    background-color: white;
+}
+
+.recentComponent {
+    margin: 5px 5px 10px 10px;
+    background-color: brown;
+    flex: 1;
+}
+
+.main {
+    background-color: red;
+    flex: 1 0 75%;
+}
+
+.nav {
+    display: flex;
+    height: 25vh;
+    background-color: white;
+
+}
+
+.projects {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 5px 5px;
+    flex-grow: 1;
+}
+
+.business {
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 5px 0px;
+    flex-grow: 1;
+}
+
+.materials {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 5px 10px;
+    flex-grow: 1;
+}
+
+.content {
+    display: flex;
+    height: 75vh;
+    background-color: white;
+}
+
+.input {
+    background-color: blue;
+    margin: 5px 10px 10px 5px;
+    flex-grow: 1;
+}
+
+.view {
+    background-color: red;
+    margin: 5px 10px 10px 0px;
+    flex-grow: 1;
+}
+
+
+.logo .head {
+    font-size: 56px;
+    font-weight: bold;
+    background-color: none;
+    margin: none;
+    margin-bottom: 0 !important;
+    padding-bottom: none;
+    color: white;
+}
+
+.logo .sub {
+    position: relative;
+    offset-position: 30px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: none;
+    margin: none;
+    padding-top: none;
+    color: white;
 }
