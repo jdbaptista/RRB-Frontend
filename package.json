@@ -5,7 +5,8 @@
   "main": "scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "jsx": "npx babel scripts/renderer.jsx -d scripts"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
     "electron": "^16.0.8"
   },
   "dependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
     "axios": "^0.25.0",
     "cors": "^2.8.5",
     "jquery": "^3.6.0"
