@@ -1,5 +1,25 @@
 
-.component {
-    color: white;
-    background-color: purple;
+.projectInput {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+
+.inputLabel {
+    color: rgb(100, 100, 100);
+}
+
+.inputField {
+    background-color: rgb(100, 100, 100);
+    border: none;
+}
+
+.inputButton {
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    border: none;
+    color: rgb(100, 100, 100);
 }

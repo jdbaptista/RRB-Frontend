@@ -104,69 +104,69 @@ $(() => {
   });
 });
 const projectInput = createElement("form", {
-  className: "component",
+  className: "projectInput",
   id: "postForm"
 }, createElement("label", {
-  className: "component",
+  className: "inputLabel",
   for: "name"
 }, "Name"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "text",
   name: "name",
   id: "fname"
-}), createElement("br", null), createElement("label", {
-  className: "component",
+}), createElement("label", {
+  className: "inputLabel",
   for: "address"
 }, "Address"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "text",
   name: "address",
   id: "faddress"
-}), createElement("br", null), createElement("label", {
-  className: "component",
+}), createElement("label", {
+  className: "inputLabel",
   for: "date"
 }, "Date"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "date",
   name: "date",
   id: "fdate"
-}), createElement("br", null), createElement("label", {
-  className: "component",
+}), createElement("label", {
+  className: "inputLabel",
   for: "task"
 }, "Task"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "text",
   name: "task",
   id: "ftask"
-}), createElement("br", null), createElement("label", {
-  className: "component",
+}), createElement("label", {
+  className: "inputLabel",
   for: "time"
 }, "Time"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "number",
   step: "0.5",
   value: "8",
   name: "time",
   id: "ftime"
-}), createElement("br", null), createElement("label", {
-  className: "component",
+}), createElement("label", {
+  className: "inputLabel",
   for: "wcCode"
 }, "Code"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "number",
   name: "wcCode",
   id: "fcode"
-}), createElement("br", null), createElement("label", {
-  className: "component",
+}), createElement("label", {
+  className: "inputLabel",
   for: "multiplier"
 }, "Multiplier"), createElement("input", {
-  className: "component",
+  className: "inputField",
   type: "number",
   step: "0.1",
   value: "1.0",
   name: "multiplier",
   id: "fmulti"
-}), createElement("br", null), createElement("button", {
-  className: "component",
+}), createElement("button", {
+  className: "inputButton",
   id: "laborPost"
 }, "Submit"));

@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    flex: 1;
     margin: 10px 5px 5px 10px;
     align-items: center;
     background-color: rgb(36, 36, 36);
@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px 10px 5px 5px;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .navButton:hover {
@@ -70,19 +70,21 @@
 
 .content {
     display: flex;
+    align-items: stretch;
     height: 75vh;
 }
 
 .input {
     background-color:rgb(87, 87, 87);
     margin: 5px 10px 10px 5px;
-    flex-grow: 1;
+    flex: 1;
+    display: flex;
 }
 
 .view {
     background-color:rgb(87, 87, 87);
     margin: 5px 10px 10px 0px;
-    flex-grow: 1;
+    flex: 1;
 }
 
 

@@ -131,23 +131,26 @@ $(() => {
 });
 
 
+
+// Components
+
 const projectInput = (
-  <form className="component" id="postForm">
-    <label className="component" for="name">Name</label>
-    <input className="component"  type="text" name="name" id="fname" /><br/>
-    <label className="component"  for="address">Address</label>
-    <input className="component"  type="text" name="address" id="faddress" /><br/>
-    <label className="component"  for="date">Date</label>
-    <input className="component"  type="date" name="date" id="fdate" /><br/>
-    <label className="component"  for="task">Task</label>
-    <input className="component"  type="text" name="task" id="ftask" /><br/>
-    <label className="component"  for="time">Time</label>
-    <input className="component"  type="number" step="0.5" value="8" name="time" id="ftime" /><br/>
-    <label className="component"  for="wcCode">Code</label>
-    <input className="component"  type="number" name="wcCode" id="fcode" /><br/>
-    <label className="component"  for="multiplier">Multiplier</label>
-    <input className="component"  type="number" step="0.1" value="1.0" name="multiplier" id="fmulti" /><br/>
-    <button className="component"  id="laborPost">Submit</button>
+  <form className="projectInput" id="postForm">
+    <label className="inputLabel" for="name">Name</label>
+    <input className="inputField"  type="text" name="name" id="fname" />
+    <label className="inputLabel"  for="address">Address</label>
+    <input className="inputField"  type="text" name="address" id="faddress" />
+    <label className="inputLabel"  for="date">Date</label>
+    <input className="inputField"  type="date" name="date" id="fdate" />
+    <label className="inputLabel"  for="task">Task</label>
+    <input className="inputField"  type="text" name="task" id="ftask" />
+    <label className="inputLabel"  for="time">Time</label>
+    <input className="inputField"  type="number" step="0.5" value="8" name="time" id="ftime" />
+    <label className="inputLabel"  for="wcCode">Code</label>
+    <input className="inputField"  type="number" name="wcCode" id="fcode" />
+    <label className="inputLabel"  for="multiplier">Multiplier</label>
+    <input className="inputField"  type="number" step="0.1" value="1.0" name="multiplier" id="fmulti" />
+    <button className="inputButton"  id="laborPost">Submit</button>
   </form>
 )
 
