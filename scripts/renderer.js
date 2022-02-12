@@ -8,7 +8,7 @@ $(() => {
   $("#myButton").on("click", () => {
     console.log(server);
     $.get(`http://${server}/api/v1/labor`, (data, status) => {
-      $("#res").html("");
+      $("#view").html("");
       for (var i = 0; i < data.length; i++) {
         let container = $("<div></div>");
         container.addClass("container");

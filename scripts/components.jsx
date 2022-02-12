@@ -34,12 +34,8 @@ const projectInput = (
 )
 
 const projectView = (
-  <div className="container" id="res"></div>
+  <div className="container" id="view"></div>
 )
-
-// const projectViewData = (
-//   <div className="component"></div>
-// )
 
 const businessInput = (
   <div className="container">
