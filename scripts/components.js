@@ -83,7 +83,7 @@ const projectInput = createElement("form", {
 }, "Submit"));
 const projectView = createElement("div", {
   className: "container",
-  id: "res"
+  id: "view"
 });
 const businessInput = createElement("div", {
   className: "container"

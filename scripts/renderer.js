@@ -73,16 +73,14 @@ $(() => {
   function loadProjectView() {
     console.log(server);
         $.get(`http://${server}/api/v1/labor`, (data, status) => {
-          $("#res").html("");
+          $("#view").html("");
           for (var i = 0; i < data.length; i++) {
-
             let container = components.projectViewData();
             container.innerHTML = `${data[i].name} at ${data[i].address} on ${new Date(data[i].date).toDateString()}`;
-            $("#res").append(container);
+            $("#view").append(container);
           }
         });
   }
-
 
 
   function project() {
@@ -90,7 +88,7 @@ $(() => {
     $(".view").html(components.projectView);
 
     loadProjectView();
-
+    
     // container post request
     $("#postForm").on("submit", (e) => {
       var name = $("#fname").val();
@@ -116,10 +114,11 @@ $(() => {
         url: `http://${server}/api/v1/labor`,
         data: JSON.stringify(postData),
         contentType: "application/json; charset=utf-8",
-        dataType: "json"
+        dataType: "json",
+        complete: () => {
+          loadProjectView();
+        }
       });
-
-      loadProjectView();
 
       e.preventDefault();
     });
